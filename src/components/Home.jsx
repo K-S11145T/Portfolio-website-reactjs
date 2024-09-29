@@ -34,8 +34,9 @@ const Home = () => {
 
       <div className='w-full relative md:h-[80vh] h-[60vh] flex-col items-center  flex  mt-10 '>
 
-        <div id='img' className='md:h-[35vh] h-[20vh] w-[20vh] rounded-full shadow-lg shadow-black absolute top-[0] translate-y-[-30%] z-[2] overflow-hidden md:w-[35vh]'>
-          <img className='h-full w-full object-cover' src="https://w0.peakpx.com/wallpaper/863/441/HD-wallpaper-kyojuro-rengoku.jpg" alt="" />
+        <div id='img' className='md:h-[35vh] h-[20vh] w-[20vh]  rounded-full shadow-lg shadow-black absolute top-[0] translate-y-[-30%] z-[2] overflow-hidden md:w-[35vh]'>
+       
+          <img className='h-full w-full object-cover' src="./android-chrome-512x512.png" alt="" />
         </div>
         <div id='div' className='md:w-[90%] w-full group overflow-hidden shadow-2xl shadow-black flex relative justify-center items-end md:text-[23vh] text-[7vh] text-center md:h-[55vh] h-[40vh] md:rounded-[100px] rounded-[50px] bg-zinc-900'>
 

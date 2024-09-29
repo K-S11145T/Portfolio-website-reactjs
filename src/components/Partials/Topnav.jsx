@@ -13,10 +13,10 @@ const Topnav = () => {
   return (
     <>
       <div className='md:p-16 p-8 text-white rounded-full bg-[rgba(0,0,0,0.1)] hover:bg-[rgba(0,0,0,0.5)] duration-300 text-xl flex justify-between items-center h-[1vh]'>
-        <div className='md:h-[70px] h-[50px] w-[50px] relative group rounded flex items-center hover:w-[17vh]  md:hover:w-[14vw] duration-300  md:w-[70px] bg-zinc-700'>
+        <div className='md:h-[70px] h-[50px] shadow-black shadow-xl w-[50px] relative group rounded flex items-center hover:w-[17vh]  md:hover:w-[14vw] duration-300  md:w-[70px] bg-zinc-700'>
           <div className='md:h-[70px] h-[50px] w-[50px] absolute z-[1] p-1 md:w-[70px] '>
 
-            <img className='h-full w-full  rounded-full object-cover' src="https://m.media-amazon.com/images/I/61XaDy-DP+L._AC_UF1000,1000_QL80_.jpg" alt="" />
+            <img className='h-full w-full  rounded-full object-cover' src="./android-chrome-512x512.png" alt="" />
           </div>
           <Link id='click' to={"/projects"} className=' hover:opacity-[100%] group-hover:left-[60%] left-1/2 translate-x-[-50%] top-1/2 tracking-tighter md:text-base text-sm translate-y-[-50%] duration-300 hover:text-zinc-400 absolute'>Projects</Link>
         </div>

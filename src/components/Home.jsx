@@ -3,9 +3,16 @@ import Topnav from './Partials/Topnav'
 import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { saveAs } from 'file-saver';
+
 
 const Home = () => {
+
+  const downloadCV = ()=>{
+    const url = "./TANUSH SINGH LATEST 1.pdf"
+    saveAs(url, 'Tanush Singh.pdf');
+  }
   const [hover, sethover] = useState(false)
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(
@@ -40,7 +47,7 @@ const Home = () => {
             <h1 className='md:text-xl text-lg text-zinc-400  group-hover:text-white duration-500 text-center py-5 font-black' >Web Designer , Frontend Developer , Video Editor</h1>
           </div>
         </div>
-        <button id='btn' className='py-2 px-3 border-2 text-sky-200 flex items-center justify-center gap-2 shadow-zinc-700 shadow-2xl  hover:shadow-white hover:animate-pulse hover:shadow-md hover:text-zinc-200  rounded-full mt-7 '> <Link className='text-base' to={"TANUSH SINGH.pdf"} download> Download CV </Link> <i class="ri-arrow-right-s-line text-3xl"></i></button>
+        <button onClick={()=>downloadCV()} id='btn' className='py-2 px-3 border-2 text-sky-200 flex items-center justify-center gap-2 shadow-zinc-700 shadow-2xl  hover:shadow-white hover:animate-pulse hover:shadow-md hover:text-zinc-200  rounded-full mt-7 '> <Link className='text-base'> Download CV </Link> <i class="ri-arrow-right-s-line text-3xl"></i></button>
 
 
       </div>
